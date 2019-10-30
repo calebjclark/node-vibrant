@@ -6,7 +6,7 @@ import {
   WorkerErrorResponse
 } from './common'
 
-self.onmessage = (event) => {
+self.onmessage = (event: any) => {
   let data: WorkerRequest = event.data
 
   let { id, payload } = data
